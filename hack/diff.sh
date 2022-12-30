@@ -42,6 +42,8 @@ function sync_with_domain() {
         local logfile="${to//\//_}_sync.log"
         echo >"${logfile}"
 
+        # to 是 docker.io/k8s.gcr.io/pause，临时替换成docker.io/guoyao95/pause
+        to="docker.io/guoyao95/pause"
         DEBUG="${DEBUG}" SYNC="${SYNC}" QUICKLY="${QUICKLY}" INCREMENTAL="${INCREMENTAL}" PARALLET="${PARALLET}" FOCUS="${regex}" SKIP="${EXCLUDE}" ./hack/diff-image.sh "${domain}/${image}" "${to}" 2>&1 | tee -a "${logfile}" || {
             echo "Error: diff image ${domain}/${image} $(helper::replace_domain "${domain}/${image}")"
         }
