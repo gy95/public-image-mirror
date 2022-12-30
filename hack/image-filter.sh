@@ -2,7 +2,7 @@
 
 SITE="https://github.com/DaoCloud/public-image-mirror"
 URL_PREFIX="https://raw.githubusercontent.com/DaoCloud/public-image-mirror/main"
-DOMAIN_SUFFIX="m.daocloud.io"
+DOMAIN_SUFFIX="docker.io"
 TMPDIR="${TMPDIR:-/tmp}/public-image-mirror"
 
 # show the usage if arguments are provided
