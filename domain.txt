@@ -1,4 +1,1 @@
-gcr.io/=m.daocloud.io/gcr.io/
-ghcr.io/=m.daocloud.io/ghcr.io/
 k8s.gcr.io/=docker.io/guoyao95/
-registry.k8s.io/=m.daocloud.io/registry.k8s.io/
