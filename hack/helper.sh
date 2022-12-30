@@ -8,7 +8,7 @@ ROOT="${ROOT:-$(dirname "${BASH_SOURCE}")/..}"
 DEFAULT_REGEX='^([a-z]+-)?[a-z]*[0-9]+(\.[0-9]+){1,2}'
 SKOPEO="${SKOPEO:-skopeo}"
 ROOT=$(realpath ${ROOT})
-DOMAIN="${DOMAIN:-m.daocloud.io}"
+DOMAIN="${DOMAIN:-docker.io}"
 
 function helper::replace_domain() {
     local domain="${1}"
